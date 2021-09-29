@@ -1,5 +1,5 @@
 {
-    "name": "MicroFrontend",
+    "name": "micro-frontend",
     "version": "1.0.0",
     "description": "ES6 powered MicroFrontend implementation",
     "main": "js/index.js",
@@ -11,10 +11,10 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/mvneerven/ttc-lemmer"
+        "url": "https://github.com/mvneerven/MicroFrontend"
     },
     "keywords": [],
-    "author": "",
+    "author": "Marc van Neerven",
     "license": "ISC",
     "devDependencies": {
         "cross-env": "^7.0.3",

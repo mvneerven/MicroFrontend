@@ -2,6 +2,13 @@
 
 This is a prototype of a MicroFrontend class that extends HTML with a web component ```<micro-frontend>``` and exposes logic to the code that runs inside the component's ```<iframe>```.
 
+# Installing
+```
+1. > npm -i
+2. > npm run dev
+3. Run your webserver (e.g. live server in VS Code)
+ ```
+
 # Features
 - simple to use ```<micro-frontend />``` tag that works like a [*seamless*](https://www.w3schools.com/tags/att_iframe_seamless.asp) ```<iframe />``` ([the seamless attribute never made it](https://github.com/whatwg/html/issues/331#issuecomment-169636370))
 - Styles from the parent are passed to the child windows at runtime
