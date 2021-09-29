@@ -1,0 +1,155 @@
+html, body {
+  overflow: hidden;
+  height: 100vh;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 60px 1fr 40px;
+      grid-template-rows: 60px 1fr 40px;
+}
+
+body main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 200px 1fr 200px;
+      grid-template-columns: 200px 1fr 200px;
+}
+
+body footer {
+  text-align: center;
+  font-size: .7rem;
+}
+
+micro-frontend {
+  position: relative;
+  background-color: transparent;
+}
+
+micro-frontend iframe {
+  border: 0;
+  border: none;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+micro-frontend .loader {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+micro-frontend .loader.hide {
+  opacity: 0;
+  -webkit-transition: opacity 1.5s;
+  transition: opacity 1.5s;
+}
+
+@-webkit-keyframes dot-keyframes {
+  0% {
+    opacity: 0.4;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1.2, 1.2);
+            transform: scale(1.2, 1.2);
+  }
+  100% {
+    opacity: 0.4;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+
+@keyframes dot-keyframes {
+  0% {
+    opacity: 0.4;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1.2, 1.2);
+            transform: scale(1.2, 1.2);
+  }
+  100% {
+    opacity: 0.4;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+
+micro-frontend .loader .loading-dots {
+  text-align: center;
+  width: 100%;
+}
+
+micro-frontend .loader .loading-dots--dot {
+  -webkit-animation: dot-keyframes 1.5s infinite ease-in-out;
+          animation: dot-keyframes 1.5s infinite ease-in-out;
+  background-color: #999;
+  border-radius: 10px;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+}
+
+micro-frontend .loader .loading-dots--dot:nth-child(2) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+micro-frontend .loader .loading-dots--dot:nth-child(3) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+html {
+  font-family: Lato, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  html,
+  body {
+    background-color: #333;
+    color: #ddd;
+    margin: 0;
+  }
+}
+
+#app1 {
+  width: 600px;
+  height: 600px;
+}
+
+section {
+  padding: 1rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin-bottom: .2rem;
+}
+
+footer {
+  background-color: black;
+  color: #666;
+}
+/*# sourceMappingURL=main.css.map */

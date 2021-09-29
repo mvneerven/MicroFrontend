@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="module" src="dist/app1.js"></script>
+</head>
+
+<body>
+    <ol>
+        <li>
+            <h3>‘Flitsbezorger Gorillas haalt 809 miljoen op’</h3>
+            <p>
+                Flitsbezorgen van boodschappen kost bakken met geld, maar daar lijkt <a
+                    href="https://gorillas.io/en">Gorillas</a> zich voorlopig geen zorgen
+                over te hoeven maken.
+            </p>
+            <div>
+                <button id="ping">Contact parent</button>
+            </div>
+            <p>
+                De Duitse disruptor van Kağan Sümer krijgt volgens The Information nog eens 809 miljoen euro aan
+                groeikapitaal. De ronde wordt naar verluidt geleid door Thuisbezorgd-concurrent Delivery Hero. Gorillas
+                moet
+                flink investeren om dit jaar zijn doel te halen van 2,2 miljard omzet op jaarbasis. De snelle groei van
+                het
+                bedrijf gaat ten koste van medewerkers, schreef Sifted vorige maand. De bezorgdienst is sinds eind vorig
+                jaar ook in Nederland actief, waar het de degens kruist met Flink en Getir.
+            </p>
+            <p>
+                Lees ook: Maken flitsbezorgers een kans in Nederland? De uitdagingen zijn enorm
+            </p>
+        </li>
+        <li>
+            <h3>RTL Nederland betaalde hackers</h3>
+            Mediabedrijf RTL Nederland heeft de cybercriminelen die eerder deze maand computers en servers gijzelden
+            8500 euro (in bitcoin) losgeld betaald. Dat is tegen het advies van de politie, die bedrijven ontraadt om
+            losgeld te betalen. Het mediabedrijf betaalde naar eigen zeggen om de pakkans te vergroten, omdat een
+            bitcoinbetaling een spoor kan zijn naar de daders. De digitale inbraak werd gepleegd met de buitgemaakte
+            inloggegevens
+            van een medeweker van een extern bedrijf, dat het netwerk van RTL Nederland beheert. Omdat voor dat account
+            geen
+            extra beveiliging (zoals tweestapsverificatie) was ingesteld, kregen de aanvallers ‘direct verregaande
+            toegang op
+            het netwerk’.
+        </li>
+        <li>
+            <h3>Europees voorstel laadkabels nederlaag Apple</h3>
+            De Europese Commissie heeft een voorstel ingediend om USB-C in te voeren als verplichte standaard voor
+            oplaadbare gadgets zoals mobiele telefoons, camera’s en draagbare luidsprekers. Het voorstel is een flinke
+            tegenslag voor Apple, dat zijn iPhones voorziet van Lightning-kabels (die onder de nieuwe regels overbodig
+            worden). De EU-richtlijn zou de komst van een ‘poortloze’, enkel draadloos oplaadbare iPhone kunnen
+            versnellen,
+            schrijft The Verge, Europarlementariër Toine Manders noemt het voorstel in de Telegraaf ‘een lachertje’, ook
+            omdat producenten twee jaar de tijd krijgen (na groen licht in het Europees Parlement). ‘Dit voorstel is bij
+            de invoering al achterhaald.’
+        </li>
+        <li>
+            <h3>Fooidienst Twitter accepteert ook bitcoin</h3>
+            Twitter rolt zijn fooisysteem Tips uit naar de rest van de wereld, na een test onder Engelstalige
+            gebruikers.
+            Twitter-gebruikers kunnen daarmee een fooi sturen naar een ander account, met behulp van – vooralsnog vooral
+            Amerikaanse – betaaldiensten waaronder Venmo, Cash App en GoFundMe. Ook bitcoin staat op het menu. Buiten de
+            VS kunnen Twitteraars die Tips activeren vanaf nu hun bitcoinadres toevoegen aan hun profiel. In de VS maakt
+            Twitter gebruik van Strike, een bitcoin-betaaldienst waarmee oprichter Jack Mallers Western Union en andere
+            geldverstuurdiensten overbodig wil maken.
+        </li>
+        <li>
+            <h3>Online winkelen groeit door, meerderheid gebruikt mobiel</h3>
+            <p>Online bestedingen zitten – ook na coronajaar 2020 – nog altijd stevig in de lift, blijkt uit cijfers van
+                branchevereniging Thuiswinkel.org Nederlandse consumenten winkelden in de eerste helft van dit jaar voor
+                7,1 miljard euro online, een stijging van 11 procent ten opzichte van een jaar eerder. Over de eerste
+                helft
+                van het jaar was de stijging 19 procent (14,8 miljard euro). Het was het eerste kwartaal waarin een
+                meerderheid
+                (58 procent) van de online kopers minimaal een keer mobiel afrekende.</p>
+        </li>
+    </ol>
+
+
+
+    <script src="dist/micro-frontend.js"></script>
+
+    <script type="module">
+        MicroFrontend.run();
+
+        document.getElementById("ping").addEventListener("click", e => {
+            MicroFrontend.trigger("action", {
+                action: "openmenu",
+                menu: "chat"
+            })
+        })
+    </script>
+</body>
+
+</html>

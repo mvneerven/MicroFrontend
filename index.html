@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MicroFrontend</title>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <header>
+        <h1>MicroFrontend example</h1>
+    </header>
+
+    <main>
+        <aside>
+            <nav class="main-menu">
+                <ul>
+                    <li>Dashboard</li>
+                    <li>Planner</li>
+                    <li>Contacts</li>
+                </ul>
+            </nav>
+        </aside>
+        <section>
+            <micro-frontend id="app1" src="micro-frontend.html"></micro-frontend>
+        </section>
+        <aside></aside>
+    </main>
+
+    <footer>Copyright 2021 Marc van Neerven</footer>
+
+    <script src="dist/micro-frontend.js"></script>
+    <script>
+        MicroFrontend.get("app1").on("action", e => {
+            alert("action: " + JSON.stringify(e.detail, null, 2));
+
+        }).data = {
+            token: "XXXXXXXXXXXXXXXXX"
+        }
+    </script>
+</body>
+
+</html>

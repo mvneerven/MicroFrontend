@@ -1,0 +1,19 @@
+html, body {
+    overflow: hidden;
+    height: 100vh;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 60px 1fr 40px;
+
+    main {
+        display: grid;
+        grid-template-columns: 200px 1fr 200px;
+    }
+
+    footer{
+        text-align: center;
+        font-size: .7rem;
+    }
+}

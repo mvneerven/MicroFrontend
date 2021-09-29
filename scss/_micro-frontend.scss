@@ -1,0 +1,70 @@
+micro-frontend {
+    position: relative;
+    background-color: transparent;
+
+    iframe {
+        border: 0;
+        border: none;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+    }
+
+    .loader {
+        position: absolute;
+        pointer-events: none;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 999;
+
+        &.hide {
+            opacity: 0;
+            transition: opacity 1.5s;
+        }
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @keyframes dot-keyframes {
+            0% {
+                opacity: 0.4;
+                transform: scale(1, 1);
+            }
+
+            50% {
+                opacity: 1;
+                transform: scale(1.2, 1.2);
+            }
+
+            100% {
+                opacity: 0.4;
+                transform: scale(1, 1);
+            }
+        }
+
+        .loading-dots {
+            text-align: center;
+            width: 100%;
+        }
+
+        .loading-dots--dot {
+            animation: dot-keyframes 1.5s infinite ease-in-out;
+            background-color: #999;
+            border-radius: 10px;
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+        }
+
+        .loading-dots--dot:nth-child(2) {
+            animation-delay: 0.5s;
+        }
+
+        .loading-dots--dot:nth-child(3) {
+            animation-delay: 1s;
+        }
+    }
+}
